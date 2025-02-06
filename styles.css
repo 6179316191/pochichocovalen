@@ -1,0 +1,212 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9e3e3 !important;
+    flex-direction: column;
+    margin: 0;
+    height: 100vh;
+    text-align: center;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección a columna */
+    justify-content: center;
+    align-items: center;
+}
+
+  h1 {
+    font-size: 2.5em;
+    color: #d32f2f;
+  }
+  
+  .buttons{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh 0vh 0vh 0vh;
+  }
+
+  .stw-button {
+    background: none;  /* Elimina el fondo predeterminado */
+    border: none;  /* Elimina el borde */
+    cursor: pointer;
+    padding: 0;  /* Elimina el padding */
+}
+
+.heart-icon {
+    max-width: 50px;  /* Ajusta el tamaño de la imagen */
+    height: 50px;  /* Mantiene la proporción */
+    transition: transform 0.3s ease;  /* Transición suave al cambiar el tamaño */
+}
+
+/* Efecto hover en el botón */
+.stw-button:hover .heart-icon {
+    transform: scale(1.1);  /* Aumenta el tamaño de la imagen al hacer hover */
+}
+
+.stw-button:hover .heart-icon {
+  content: url('heart3.png'); /* Cambiar la imagen aquí */
+}
+
+  
+.yes-button, .no-button {
+  font-family: "Courier Prime", serif;
+  font-weight: 700;
+  font-size: 8pt;
+  padding: 12px 24px;
+  background-color: #fce8e8; /* Un poco más claro que #f9e3e3 */
+  color: #d32f2f; /* Texto en rojo oscuro para buen contraste */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: all 0.3s ease;
+}
+
+.yes-button:hover, .no-button:hover {
+  background-color: #f8dada; /* Un poco más oscuro en hover */
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+.yes-button:active, .no-button:active {
+  transform: translateY(1px); /* Simula un clic */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Animación de temblor */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+.shaking {
+  animation: shake 0.3s ease-in-out;
+}
+
+  
+  .gif_container img {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+  }
+
+  .heart {
+    position: fixed;
+    bottom: -50px; /* Inicia un poco más abajo de la pantalla */
+    animation: floatUp 5s linear infinite;
+    opacity: 1;
+}
+
+@keyframes floatUp {
+  0% {
+      transform: translateY(0) translateX(0);
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(-100vh) translateX(-20px);
+      opacity: 0.2; /* No desaparecen completamente */
+  }
+}
+
+
+.texto{
+  margin: 0px;
+  color: #d32f2f;
+  font-family: "Courier Prime", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10pt;
+  line-height: 2;
+  border-right: 1px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation:
+    typing 2s steps(69),
+    cursor .4s step-end infinite alternate;
+}
+
+/*cursor blinkin*/
+@keyframes cursor{
+  50% { border-color: transparent;}
+}
+
+/*typin*/
+@keyframes typing{
+  from { width: 0}
+}
+
+.corazon{
+  max-width: 30px;  /* Ajusta el tamaño de la imagen */
+  height: auto;  /* Mantiene la proporción */
+  margin: 0px 20px 0px 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 5vh;
+  align-items: center;
+  
+}
+
+.texto-contenedor{
+  display: inline-block;
+  margin: 5px;
+}
+
+
+.texto-dos {
+  margin: 0px;
+  color: #d32f2f;
+  font-family: "Courier Prime", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10pt;
+  line-height: 2;
+  width: 100%;
+  opacity: 0; /* Inicia con opacidad 0 */
+  transition: opacity 2s ease-in-out; /* Efecto de fade-in suave */
+}
+
+/* Se activa cuando el elemento entra en el viewport o se carga */
+.texto-dos.visible {
+  opacity: 1; /* Cuando tiene la clase visible, la opacidad cambia a 1 */
+}
+
+
+/*cursor blinkin*/
+@keyframes cursor{
+  50% { border-color: transparent;}
+}
+
+.buttons-2{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0vh 2vh 0vh;
+  gap: 10px;
+}
+
+.texto-3{
+  margin: 0px;
+  color: #d32f2f;
+  font-family: "Courier Prime", serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 11pt;
+  font-variant: small-caps;
+  letter-spacing: 5px;
+}

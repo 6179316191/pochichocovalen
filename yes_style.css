@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: "Courier Prime", serif; /* Asegúrate de que esta línea esté aquí */
+    font-weight: 700;
+}
+
+.container {
+    text-align: center;
+}
+
+.header_text {
+    margin: 0px;
+    color: #d32f2f;
+    font-family: "Courier Prime", serif; /* Asegúrate de que esta línea esté aquí también */
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10pt;
+    line-height: 2;
+}
+
+.gif_container img {
+    width: 100%; 
+    max-width: 200px; 
+    height: auto; 
+    margin: 2vh 0vh 0vh 0vh;
+}
+
+
+.texto-cuatro {
+    margin: 0px;
+    color: #d32f2f;
+    font-family: "Courier Prime", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10pt;
+    line-height: 2;
+    width: 100%;
+  }
